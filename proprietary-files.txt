@@ -17,6 +17,9 @@ lib/libcdsprpc_system.so
 lib/libmdsprpc_system.so
 lib/libsdsprpc_system.so
 
+# DASH
+-sbin/dashd;rootfs
+
 # CNE
 etc/permissions/cneapiclient.xml
 etc/permissions/com.quicinc.cne.xml
