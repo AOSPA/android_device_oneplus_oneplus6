@@ -130,6 +130,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
 
+# tri-state-key
+PRODUCT_PACKAGES += \
+    tri-state-key_daemon
+
 # QTI common
 -include vendor/qcom/common/av/qti-av.mk
 -include vendor/qcom/common/bt/qti-bt.mk
