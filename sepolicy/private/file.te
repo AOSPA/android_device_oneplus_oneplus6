@@ -9,3 +9,4 @@ type persist_file, file_type;
 # sysfs
 type sysfs_graphics, sysfs_type, fs_type;
 type sysfs_oem, sysfs_type, fs_type;
+type sysfs_battery_supply, sysfs_type, fs_type;
