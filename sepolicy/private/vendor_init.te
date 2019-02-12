@@ -1,0 +1,2 @@
+# Allow vendor_init to set public_vendor_default_prop
+set_prop(vendor_init, public_vendor_default_prop)
