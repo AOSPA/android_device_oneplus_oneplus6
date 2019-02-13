@@ -89,6 +89,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.oneplus_sdm845
 
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.0 \
+    android.hardware.nfc@1.1 \
+    android.hardware.secure_element@1.0 \
+    com.android.nfc_extras \
+    Tag \
+    vendor.nxp.nxpese@1.0 \
+    vendor.nxp.nxpnfc@1.0
+
 # NN
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-rtti

@@ -104,6 +104,16 @@ lib/vendor.display.color@1.0.so
 lib/vendor.display.color@1.1.so
 lib/vendor.display.postproc@1.0.so
 
+# NFC
+-app/NxpNfcNci/NxpNfcNci.apk|5ae366475fe681ed1c7b337918763040661f0f2a
+-app/NxpSecureElement/NxpSecureElement.apk
+etc/nfcee_access.xml|61a2dbaec0339b6c3c79b487a704d5dc6306b284
+etc/permissions/com.nxp.nfc.xml
+framework/com.nxp.nfc.jar
+lib64/ese_spi_nxp.so
+lib64/libnxpnfc_nci_jni.so
+lib64/libnxpnfc-nci.so
+
 # Perf
 bin/perfservice
 etc/init/perfservice.rc
