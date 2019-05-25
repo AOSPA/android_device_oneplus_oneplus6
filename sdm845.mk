@@ -60,6 +60,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/gf_input.idc:system/usr/idc/gf_input.idc \
     $(LOCAL_PATH)/keylayout/gf_input.kl:system/usr/keylayout/gf_input.kl
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.oneplus_sdm845
+
 # QCOM
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
