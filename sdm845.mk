@@ -57,9 +57,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     hardware/qcom/audio/configs/sdm845/audio_policy.conf:system/etc/audio_policy.conf
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    libbluetooth_qti \
+    libbt-logClient.so
+
 # Boot control
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
+
+# Display
+PRODUCT_PACKAGES += \
+    libdisplayconfig \
+    libqdMetaData.system
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -74,6 +84,17 @@ PRODUCT_COPY_FILES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.oneplus_sdm845
+
+# NN
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-rtti
+
+# Perf
+-include vendor/qcom/common/qti-vendor.mk
+
+# Power
+PRODUCT_PACKAGES += \
+    power.qcom
 
 # QCOM
 PRODUCT_COPY_FILES += \
@@ -103,3 +124,11 @@ PRODUCT_PACKAGES_DEBUG += \
 # VNDK-SP
 PRODUCT_PACKAGES += \
     vndk-sp
+
+# WFD
+PRODUCT_PACKAGES += \
+    libnl \
+    libwfdaac
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
