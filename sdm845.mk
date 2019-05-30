@@ -46,6 +46,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fs_config_files
 
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio@4.0 \
+    android.hardware.audio.common@4.0 \
+    android.hardware.audio.common@4.0-util \
+    android.hardware.audio.effect@4.0 \
+    libaudio-resampler
+
+PRODUCT_COPY_FILES += \
+    hardware/qcom/audio/configs/sdm845/audio_policy.conf:system/etc/audio_policy.conf
+
 # Boot control
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
