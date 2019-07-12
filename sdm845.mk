@@ -19,7 +19,8 @@ $(call inherit-product-if-exists, vendor/oneplus/sdm845-common/sdm845-common-ven
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-pa
 
 # Properties
 -include $(LOCAL_PATH)/common-props.mk
