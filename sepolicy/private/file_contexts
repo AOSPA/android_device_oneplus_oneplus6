@@ -14,3 +14,6 @@
 
 # Modules
 /system/lib/modules/wlan\.ko    u:object_r:vendor_file:s0
+
+# HALs
+/system/bin/hw/pa\.biometrics\.fingerprint\.inscreen@1.0-service\.oneplus_fajita    u:object_r:hal_fod_sdm845_exec:s0
