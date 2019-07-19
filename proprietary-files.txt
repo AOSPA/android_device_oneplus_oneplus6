@@ -123,7 +123,10 @@ lib64/libnxpnfc-nci.so
 # Perf
 bin/perfservice
 etc/init/perfservice.rc
+etc/perf/whitelistedapps.xml
+lib64/libqti-at.so
 lib64/libqti-util_system.so
+lib/libqti-at.so
 lib/libqti-util_system.so
 
 # QMI
