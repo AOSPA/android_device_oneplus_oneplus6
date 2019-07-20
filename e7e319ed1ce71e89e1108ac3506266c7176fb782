@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "313ab90e_63d3f818",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 419,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2019-07-20T12:36:56Z",
+      "side": 1,
+      "message": "Do we support this overlay?",
+      "revId": "e7e319ed1ce71e89e1108ac3506266c7176fb782",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": true
+    }
+  ]
+}
