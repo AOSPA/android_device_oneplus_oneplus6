@@ -56,7 +56,8 @@ PRODUCT_PACKAGES += \
     libaudio-resampler
 
 PRODUCT_COPY_FILES += \
-    hardware/qcom/audio/configs/sdm845/audio_policy.conf:system/etc/audio_policy.conf
+    hardware/qcom/audio/configs/sdm845/audio_policy.conf:system/etc/audio_policy.conf \
+    $(LOCAL_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml
 
 # Bluetooth
 PRODUCT_PACKAGES += \
