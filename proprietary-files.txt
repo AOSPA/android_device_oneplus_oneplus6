@@ -104,12 +104,6 @@ lib/vendor.display.color@1.0.so
 lib/vendor.display.color@1.1.so
 lib/vendor.display.postproc@1.0.so
 
-# MM parser - from beryllium
-lib64/extractors/libmmparser.so|39274654d54cf00aec14a8370bb8b95a422ae3ba
-lib64/libmmparser_lite.so|9e66b77996af4a9601927004e4dcbd9e7944da30
-lib/extractors/libmmparser.so|cb98abec349f3ecb169e9ac78df3f77af4e3b4d1
-lib/libmmparser_lite.so|58841d084fcdc2b25e2e821996e03c35f3034151
-
 # NFC
 -app/NxpNfcNci/NxpNfcNci.apk|5ae366475fe681ed1c7b337918763040661f0f2a
 -app/NxpSecureElement/NxpSecureElement.apk
@@ -121,13 +115,9 @@ lib64/libnxpnfc_nci_jni.so
 lib64/libnxpnfc-nci.so
 
 # Perf
-bin/perfservice
-etc/init/perfservice.rc
 etc/perf/whitelistedapps.xml
 lib64/libqti-at.so
-lib64/libqti-util_system.so
 lib/libqti-at.so
-lib/libqti-util_system.so
 
 # QMI
 etc/permissions/qti_permissions.xml
@@ -303,13 +293,11 @@ etc/init/wfdservice.rc
 etc/wfdconfig.xml
 etc/wfdconfigsink.xml
 lib64/libFileMux.so
-lib64/libmmosal.so
 lib64/libOmxMux.so
 lib64/libwfdclient.so
 lib64/libwfdnative.so
 lib/com.qualcomm.qti.wifidisplayhal@1.0.so
 lib/libFileMux.so
-lib/libmmosal.so
 lib/libOmxMux.so
 lib/libwfdavenhancements.so
 lib/libwfdclient.so

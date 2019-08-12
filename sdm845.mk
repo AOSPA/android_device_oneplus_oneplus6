@@ -105,9 +105,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-rtti
 
-# Perf
--include vendor/qcom/common/qti-vendor.mk
-
 # Power
 PRODUCT_PACKAGES += \
     power.qcom
@@ -116,6 +113,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
+
+# QTI common
+-include vendor/qcom/common/qti-vendor.mk
 
 # Update engine
 PRODUCT_PACKAGES += \
