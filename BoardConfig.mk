@@ -15,6 +15,8 @@
 # limitations under the License.
 #
 
+BUILD_BROKEN_DUP_RULES := true
+
 BOARD_VENDOR := oneplus
 
 DEVICE_PATH := device/oneplus/oneplus6
