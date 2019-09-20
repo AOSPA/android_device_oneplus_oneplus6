@@ -114,7 +114,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
 
 # QTI common
--include vendor/qcom/common/qti-vendor.mk
+-include vendor/qcom/common/av/qti-av.mk
+-include vendor/qcom/common/bt/qti-bt.mk
+-include vendor/qcom/common/perf/qti-perf.mk
 
 # Update engine
 PRODUCT_PACKAGES += \
