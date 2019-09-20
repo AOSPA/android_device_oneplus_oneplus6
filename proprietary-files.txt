@@ -116,8 +116,6 @@ lib64/libnxpnfc-nci.so
 
 # Perf
 etc/perf/whitelistedapps.xml
-lib64/libqti-at.so
-lib/libqti-at.so
 
 # QMI
 etc/permissions/qti_permissions.xml
