@@ -132,6 +132,7 @@ PRODUCT_COPY_FILES += \
 
 # tri-state-key
 PRODUCT_PACKAGES += \
+    TriStateHandler \
     tri-state-key_daemon
 
 # QTI common
