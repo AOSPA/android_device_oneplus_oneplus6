@@ -66,6 +66,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.netflix.bsp_rev=Q845-14477-1
 
+# NFC
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.nfc.delayese=false
+
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.at_library=libqti-at.so \
@@ -78,6 +82,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     DEVICE_PROVISIONED=1 \
+    persist.netmon.linger=5000
     persist.radio.efssync=true \
     persist.rcs.supported=0 \
     persist.rild.nitz_long_ons_0="" \
@@ -89,6 +94,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.rild.nitz_short_ons_1="" \
     persist.rild.nitz_short_ons_2="" \
     persist.rild.nitz_short_ons_3="" \
+    persist.vendor.ims.disableADBLogs=1
     persist.vendor.ims.dropset_feature=0 \
     persist.vendor.qmi_log_on=1 \
     persist.vendor.radio.arfcn_test_mode=3 \
