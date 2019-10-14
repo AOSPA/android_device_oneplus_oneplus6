@@ -10,8 +10,8 @@
 -product/app/imssettings/imssettings.apk
 -product/app/QtiSystemService/QtiSystemService.apk
 -product/app/QtiTelephonyService/QtiTelephonyService.apk
--product/priv-app/ims/ims.apk
--product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+-product/priv-app/ims/ims.apk|322c09830c065bb65f185734f46215d9
+-product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|87390cd426f6946c3fd3afea42ff565d
 -sbin/dashd;rootfs
 
 bin/wfdservice
@@ -204,8 +204,8 @@ product/framework/com.quicinc.cne.constants-V2.0-java.jar
 product/framework/com.quicinc.cne.constants-V2.1-java.jar
 product/framework/dpmapi.jar
 product/framework/embmslibrary.jar
--product/framework/qcrilhook.jar
-product/framework/qti-telephony-common.jar
+-product/framework/qcrilhook.jar|6fecd23da014597af3a5cf79c0593c8c
+product/framework/qti-telephony-common.jar|fc0c94499873f5a2d2511353ad3c84fa
 product/framework/QtiTelephonyServicelibrary.jar
 product/framework/vendor.qti.data.factory-V1.0-java.jar
 product/framework/vendor.qti.data.factory-V2.0-java.jar
