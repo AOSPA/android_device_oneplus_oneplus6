@@ -75,6 +75,7 @@ PRODUCT_PACKAGES_DEBUG += \
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.qcom.rc \
+    init.qcom.post_boot.sh \
     ueventd.qcom.rc
 
 # Display
