@@ -21,6 +21,8 @@ DEVICE_PATH := device/oneplus/oneplus6
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
+TARGET_OTA_ASSERT_DEVICE := oneplus6,oneplus6t,OnePlus6,OnePlus6T,enchilada,fajita
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
