@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="android.overlay.oneplus6t"
+        android:versionCode="1"
+        android:versionName="1.0">
+        <overlay android:targetPackage="android"
+                android:requiredSystemPropertyName="ro.product.vendor.device"
+                android:requiredSystemPropertyValue="OnePlus6T"
+		android:priority="11"
+		android:isStatic="true" />
+</manifest>

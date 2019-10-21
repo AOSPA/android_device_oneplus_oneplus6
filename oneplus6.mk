@@ -17,16 +17,19 @@
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
+
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/oneplus/sdm845-common/sdm845-common-vendor.mk)
+
+# Screen density
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-pa
-
-# Properties
--include $(LOCAL_PATH)/common-props.mk
 
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
@@ -82,6 +85,13 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libqdMetaData.system
 
+# Fingerprint
+PRODUCT_COPY_FILES += \
+    vendor/pa/config/permissions/vendor.pa.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.pa.biometrics.fingerprint.inscreen.xml
+
+PRODUCT_PACKAGES += \
+    pa.biometrics.fingerprint.inscreen@1.0-service.oneplus_fajita
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
@@ -110,6 +120,13 @@ PRODUCT_PACKAGES += \
 # NN
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-rtti
+
+# Overlays
+PRODUCT_PACKAGES += \
+    OnePlus6FrameworksRes \
+    OnePlus6SystemUI \
+    OnePlus6TFrameworksRes \
+    OnePlus6TSystemUI
 
 # Power
 PRODUCT_PACKAGES += \
