@@ -216,3 +216,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
+
+# ParanoidDoze
+PRODUCT_PACKAGES += ParanoidDoze
