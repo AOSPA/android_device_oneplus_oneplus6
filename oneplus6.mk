@@ -181,3 +181,6 @@ PRODUCT_PACKAGES += \
     SDM845CommonFrameworkPARes \
     SDM845CommonSystemUIPARes \
     SDM845CommonTelephonyRes
+
+# ParanoidDoze
+PRODUCT_PACKAGES += ParanoidDoze
