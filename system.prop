@@ -316,8 +316,3 @@ ro.surface_flinger.vsync_event_phase_offset_ns=2000000
 ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 debug.sf.enable_gl_backpressure=1
-
-# OnePlus sensors
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sensor.pickup=oneplus.sensor.pickup \
-    ro.sensor.pocket=oneplus.sensor.pocket
