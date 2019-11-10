@@ -78,6 +78,11 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libqdMetaData.system
 
+# Display Calibration
+PRODUCT_PACKAGES += \
+    qdcm_calib_data_samsung_s6e3fc2x01_cmd_mode_dsi_panel.xml \
+    qdcm_calib_data_samsung_sofef00_m_cmd_mode_dsi_panel.xml
+
 # Fingerprint
 PRODUCT_COPY_FILES += \
     vendor/pa/config/permissions/vendor.pa.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.pa.biometrics.fingerprint.inscreen.xml
