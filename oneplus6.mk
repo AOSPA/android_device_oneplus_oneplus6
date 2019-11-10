@@ -191,6 +191,3 @@ PRODUCT_PACKAGES += \
     OnePlus6SystemUI \
     OnePlus6TFrameworksRes \
     OnePlus6TSystemUI
-
-# ParanoidDoze
-PRODUCT_PACKAGES += ParanoidDoze
