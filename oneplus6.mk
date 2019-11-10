@@ -114,13 +114,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-rtti
 
-# Overlays
-PRODUCT_PACKAGES += \
-    OnePlus6FrameworksRes \
-    OnePlus6SystemUI \
-    OnePlus6TFrameworksRes \
-    OnePlus6TSystemUI
-
 # Power
 PRODUCT_PACKAGES += \
     power.qcom
@@ -181,7 +174,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qdcm_calib_data_samsung_sofef00_m_cmd_mode_dsi_panel.xml:system/product/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/qdcm_calib_data_samsung_sofef00_m_cmd_mode_dsi_panel.xml \
     $(LOCAL_PATH)/configs/qdcm_calib_data_samsung_s6e3fc2x01_cmd_mode_dsi_panel.xml:system/product/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/qdcm_calib_data_samsung_s6e3fc2x01_cmd_mode_dsi_panel.xml
 
-# RRO Overlays
+# Common RRO Overlays
 PRODUCT_PACKAGES += \
     SDM845CommonBluetoothRes \
     SDM845CommonCarrierConfigRes \
@@ -189,6 +182,13 @@ PRODUCT_PACKAGES += \
     SDM845CommonFrameworkPARes \
     SDM845CommonSystemUIPARes \
     SDM845CommonTelephonyRes
+
+# Variant-specific RRO overlays
+PRODUCT_PACKAGES += \
+    OnePlus6FrameworksRes \
+    OnePlus6SystemUI \
+    OnePlus6TFrameworksRes \
+    OnePlus6TSystemUI
 
 # ParanoidDoze
 PRODUCT_PACKAGES += ParanoidDoze
