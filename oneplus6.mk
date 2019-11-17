@@ -190,4 +190,5 @@ PRODUCT_PACKAGES += \
     OnePlus6FrameworksRes \
     OnePlus6SystemUI \
     OnePlus6TFrameworksRes \
+    OnePlus6TSettingsPARes \
     OnePlus6TSystemUI
