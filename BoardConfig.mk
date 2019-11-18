@@ -80,14 +80,6 @@ TARGET_USE_QTI_BT_STACK := true
 # Charger Mode
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
-# Dex
-ifeq ($(HOST_OS),linux)
-    ifneq ($(TARGET_BUILD_VARIANT),eng)
-      WITH_DEXPREOPT ?= true
-      WITH_DEXPREOPT_PIC := false
-    endif
-endif
-
 # Display
 TARGET_USES_ION := true
 TARGET_USES_NEW_ION_API := true
