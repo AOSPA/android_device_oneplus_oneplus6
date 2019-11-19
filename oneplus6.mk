@@ -192,3 +192,6 @@ PRODUCT_PACKAGES += \
     OnePlus6TFrameworksRes \
     OnePlus6TSettingsPARes \
     OnePlus6TSystemUI
+
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
