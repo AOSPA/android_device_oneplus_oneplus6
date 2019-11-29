@@ -4104,7 +4104,7 @@ case "$target" in
         echo 1536000 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq
         echo 1 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/pl
         echo "0:1324800" > /sys/module/cpu_boost/parameters/input_boost_freq
-        echo 120 > /sys/module/cpu_boost/parameters/input_boost_ms
+        echo 200 > /sys/module/cpu_boost/parameters/input_boost_ms
 
         #ifdef VENDOR_EDIT
         # Enable Adaptive LMK liuyaxin@framework.perf change
