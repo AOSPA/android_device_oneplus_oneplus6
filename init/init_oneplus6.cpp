@@ -58,26 +58,21 @@ void property_override_dual(char const system_prop[], char const vendor_prop[], 
 }
 
 
-static void set_fingerprint()
+void vendor_load_properties()
 {
 	std::string variant = GetProperty(PROP_VARIANT, "");
 	if (variant == "OnePlus6") {
 		property_override("ro.product.system.device", "oneplus6");
 		property_override("ro.product.system.model", "OnePlus 6");
 		property_override("ro.product.device", "OnePlus6");
-		property_override("ro.build.fingerprint", "OnePlus/OnePlus6/OnePlus6:10/QKQ1.190716.003/1910270526:user/release-keys");
+		property_override("ro.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
 		property_override("ro.system.build.fingerprint", "OnePlus/OnePlus6/OnePlus6:10/QKQ1.190716.003/1910270526:user/release-keys");
 
-    } else if (variant == "OnePlus6T") {
+	} else if (variant == "OnePlus6T") {
 		property_override("ro.product.system.device", "oneplus6t");
 		property_override("ro.product.system.model", "OnePlus 6T");
 		property_override("ro.product.device", "OnePlus6T");
-		property_override("ro.build.fingerprint", "OnePlus/OnePlus6T/OnePlus6T:10/QKQ1.190716.003/1910270420:user/release-keys");
+		property_override("ro.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
 		property_override("ro.system.build.fingerprint", "OnePlus/OnePlus6T/OnePlus6T:10/QKQ1.190716.003/1910270420:user/release-keys");
 	}
-}
-
-void vendor_load_properties()
-{
-	set_fingerprint();
 }
