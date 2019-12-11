@@ -8,7 +8,6 @@ service fingerprint-inscreen-1-0 /system/bin/hw/pa.biometrics.fingerprint.inscre
     user system
     group system
     shutdown critical
-    disabled
 
-on property:ro.product.vendor.device=OnePlus6T
-    start fingerprint-inscreen-1-0
+on property:ro.product.vendor.device=OnePlus6
+    stop fingerprint-inscreen-1-0
