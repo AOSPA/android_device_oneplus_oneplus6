@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/oneplus/sdm845-common/sdm845-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/oneplus/oneplus6/oneplus6-vendor.mk)
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal

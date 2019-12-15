@@ -159,4 +159,4 @@ TARGET_INIT_VENDOR_LIB := libinit_oneplus6
 TARGET_RECOVERY_DEVICE_MODULES := libinit_oneplus6
 
 # Inherit from the proprietary version
--include vendor/oneplus/sdm845-common/BoardConfigVendor.mk
+-include vendor/oneplus/oneplus6/BoardConfigVendor.mk

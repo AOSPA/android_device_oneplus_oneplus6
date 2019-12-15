@@ -407,3 +407,6 @@ product/lib64/vendor.qti.imsrtpservice@2.0.so
 product/lib64/vendor.qti.imsrtpservice@2.1.so
 product/lib64/vendor.qti.latency@2.0.so
 product/lib64/vendor.qti.voiceprint@1.0.so
+
+product/vendor_overlay/29/lib/libsdmcore.so
+product/vendor_overlay/29/lib64/libsdmcore.so

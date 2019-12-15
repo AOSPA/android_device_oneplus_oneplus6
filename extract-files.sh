@@ -19,7 +19,6 @@
 set -e
 
 export DEVICE=oneplus6
-export DEVICE_COMMON=sdm845-common
 export VENDOR=oneplus
 
 export DEVICE_BRINGUP_YEAR=2019
@@ -66,19 +65,10 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
-# Initialize the helper for common device
-setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ROOT}" true "${CLEAN_VENDOR}"
+# Initialize the helper for device
+setup_vendor "${DEVICE}" "${VENDOR}" "${ROOT}" true "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
         "${KANG}" --section "${SECTION}"
-
-if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
-    # Reinitialize the helper for device
-    source "${MY_DIR}/../${DEVICE}/extract-files.sh"
-    setup_vendor "${DEVICE}" "${VENDOR}" "${ROOT}" false "${CLEAN_VENDOR}"
-
-    extract "${MY_DIR}/../${DEVICE}/proprietary-files.txt" "${SRC}" \
-            "${KANG}" --section "${SECTION}"
-fi
 
 "${MY_DIR}/setup-makefiles.sh"
