@@ -66,7 +66,7 @@ if [ -z "${SRC}" ]; then
 fi
 
 # Initialize the helper for device
-setup_vendor "${DEVICE}" "${VENDOR}" "${ROOT}" true "${CLEAN_VENDOR}"
+setup_vendor "${DEVICE}" "${VENDOR}" "${ROOT}" false "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
         "${KANG}" --section "${SECTION}"

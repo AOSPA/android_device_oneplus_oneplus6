@@ -37,7 +37,7 @@ fi
 source "${HELPER}"
 
 # Initialize the helper for device
-setup_vendor "${DEVICE}" "${VENDOR}" "${ROOT}" true
+setup_vendor "${DEVICE}" "${VENDOR}" "${ROOT}"
 
 # Copyright headers and guards
 write_headers "oneplus6"
