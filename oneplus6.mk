@@ -56,7 +56,10 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.common@5.0 \
     android.hardware.audio.common@5.0-util \
     android.hardware.audio.effect@5.0 \
-    libaudio-resampler
+    libaudio-resampler \
+    libaudiohal \
+    libaudiohal_deathhandler \
+    libstagefright_softomx
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -76,6 +79,7 @@ PRODUCT_PACKAGES += \
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig \
+    libqdMetaData \
     libqdMetaData.system
 
 # Display Calibration
@@ -104,6 +108,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.oneplus_sdm845
 
+# Media
+PRODUCT_PACKAGES += \
+    libmediaplayerservice
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0 \
@@ -125,8 +133,17 @@ PRODUCT_PACKAGES += \
 
 # QCOM
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
+
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.0 \
+    android.hardware.radio@1.1 \
+    android.hardware.radio@1.2 \
+    android.hardware.radio@1.3 \
+    android.hardware.radio@1.4 \
+    android.hardware.radio.config@1.0 \
+    android.hardware.radio.deprecated@1.0
 
 # tri-state-key
 PRODUCT_PACKAGES += \
