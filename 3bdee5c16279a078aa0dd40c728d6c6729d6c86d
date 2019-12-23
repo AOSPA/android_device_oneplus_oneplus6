@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3e7b6bf9_fc84ff88",
+        "filename": "BoardConfig.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1000450
+      },
+      "writtenOn": "2019-12-23T10:16:00Z",
+      "side": 1,
+      "message": "I thought we werent compatible",
+      "revId": "3bdee5c16279a078aa0dd40c728d6c6729d6c86d",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": false
+    }
+  ]
+}
