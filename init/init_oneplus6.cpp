@@ -65,15 +65,26 @@ void vendor_load_properties()
 		property_override("ro.product.system.device", "oneplus6");
 		property_override("ro.product.system.model", "OnePlus 6");
 		property_override("ro.product.device", "OnePlus6");
-		property_override("ro.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
 		property_override("ro.system.build.fingerprint", "OnePlus/OnePlus6/OnePlus6:10/QKQ1.190716.003/1910270526:user/release-keys");
-                property_override("ro.fingerprint.inscreen_disabled", "1");
+		property_override("ro.fingerprint.inscreen_disabled", "1");
 
 	} else if (variant == "OnePlus6T") {
 		property_override("ro.product.system.device", "oneplus6t");
 		property_override("ro.product.system.model", "OnePlus 6T");
 		property_override("ro.product.device", "OnePlus6T");
-		property_override("ro.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
 		property_override("ro.system.build.fingerprint", "OnePlus/OnePlus6T/OnePlus6T:10/QKQ1.190716.003/1910270420:user/release-keys");
 	}
+
+	// Common Properties
+
+	// Fingerprint
+	property_override("ro.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
+
+	// Dalvik
+	property_override_dual("dalvik.vm.heapstartsize", "dalvik.vm.heapstartsize", "16m");
+	property_override_dual("dalvik.vm.heapgrowthlimit", "dalvik.vm.heapgrowthlimit", "256m");
+	property_override_dual("dalvik.vm.heapsize", "dalvik.vm.heapsize", "512m");
+	property_override_dual("dalvik.vm.heaptargetutilization", "dalvik.vm.heaptargetutilization", "0.5");
+	property_override_dual("dalvik.vm.heapminfree", "dalvik.vm.heapminfree", "8m");
+	property_override_dual("dalvik.vm.heapmaxfree", "dalvik.vm.heapmaxfree", "32m");
 }
