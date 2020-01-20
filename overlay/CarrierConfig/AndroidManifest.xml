@@ -4,6 +4,6 @@
         android:versionCode="1"
         android:versionName="1.0">
         <overlay android:targetPackage="com.android.carrierconfig"
-		android:priority="800"
+		android:priority="700"
 		android:isStatic="true" />
 </manifest>
