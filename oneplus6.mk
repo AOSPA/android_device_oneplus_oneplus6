@@ -151,9 +151,7 @@ PRODUCT_PACKAGES += \
     tri-state-key_daemon
 
 # QTI common
--include vendor/qcom/common/av/qti-av.mk
--include vendor/qcom/common/bt/qti-bt.mk
--include vendor/qcom/common/perf/qti-perf.mk
+-include vendor/qcom/common/*/qti-*.mk
 
 # Update engine
 PRODUCT_PACKAGES += \
