@@ -50,22 +50,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fs_config_files
 
-# Audio
-PRODUCT_PACKAGES += \
-    android.hardware.audio@5.0 \
-    android.hardware.audio.common@5.0 \
-    android.hardware.audio.common@5.0-util \
-    android.hardware.audio.effect@5.0 \
-    libaudio-resampler \
-    libaudiohal \
-    libaudiohal_deathhandler \
-    libstagefright_softomx
-
-# Bluetooth
-PRODUCT_PACKAGES += \
-    libbluetooth_qti \
-    libbt-logClient.so
-
 # Boot control
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
@@ -75,12 +59,6 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.post_boot.sh \
     ueventd.qcom.rc
-
-# Display
-PRODUCT_PACKAGES += \
-    libdisplayconfig \
-    libqdMetaData \
-    libqdMetaData.system
 
 # Display Calibration
 PRODUCT_PACKAGES += \
@@ -94,12 +72,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     pa.biometrics.fingerprint.inscreen@1.0-service.oneplus_fajita
 
-# HIDL
-PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    android.hidl.manager@1.0
-
-# Hotword enrollement
+# Hotword enrollment
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:system/etc/permissions/privapp-permissions-hotword.xml
 
@@ -112,10 +85,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.oneplus_sdm845
 
-# Media
-PRODUCT_PACKAGES += \
-    libmediaplayerservice
-
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0 \
@@ -126,24 +95,6 @@ PRODUCT_PACKAGES += \
     Tag \
     vendor.nxp.nxpese@1.0 \
     vendor.nxp.nxpnfc@1.0
-
-# NN
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-rtti
-
-# Power
-PRODUCT_PACKAGES += \
-    power.qcom
-
-# Radio
-PRODUCT_PACKAGES += \
-    android.hardware.radio@1.0 \
-    android.hardware.radio@1.1 \
-    android.hardware.radio@1.2 \
-    android.hardware.radio@1.3 \
-    android.hardware.radio@1.4 \
-    android.hardware.radio.config@1.0 \
-    android.hardware.radio.deprecated@1.0
 
 # tri-state-key
 PRODUCT_PACKAGES += \
