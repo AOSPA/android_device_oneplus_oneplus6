@@ -201,8 +201,17 @@ PRODUCT_PACKAGES += \
     OnePlus6TSettingsPARes \
     OnePlus6TSystemUI
 
+# Add option to disable notch
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
+
+# Disable OnePlus shape icon overlays
+PRODUCT_PACKAGES += \
+    OnePlusIconShapeCircleOverlay \
+    OnePlusIconShapeRoundedRectOverlay \
+    OnePlusIconShapeSquareOverlay \
+    OnePlusIconShapeSquircleOverlay \
+    OnePlusIconShapeTeardropOverlay
 
 # ParanoidDoze
 PRODUCT_PACKAGES += ParanoidDoze
