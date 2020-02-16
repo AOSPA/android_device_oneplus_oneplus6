@@ -324,3 +324,8 @@ ro.sensor.pocket=oneplus.sensor.pocket
 
 # USB OTG
 persist.sys.oem.otg_support=true
+
+# OnePlus Camera
+camera.disable_zsl_mode=true
+persist.camera.privapp.list=com.oneplus.camera
+persist.vendor.camera.privapp.list=com.oneplus.camera

@@ -5,6 +5,12 @@ on init
     chown system system /dev/cpuset/little/tasks
     chmod 0664 /dev/cpuset/little/tasks
 
+on boot
+    mkdir /data/misc/aosp 0770 cameraserver audio
+    write /data/misc/aosp/client_package_name 0
+    chown cameraserver audio /data/misc/aosp/client_package_name
+    chmod 0644 /data/misc/aosp/client_package_name
+
 service dashd /system/bin/dashd
     class core
     critical

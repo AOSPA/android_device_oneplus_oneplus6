@@ -14,3 +14,6 @@
 
 # tri-state-key
 /system/bin/tri-state-key_daemon          u:object_r:tri-state-key_daemon_exec:s0
+
+# OnePlus Camera
+/data/misc/aosp/client_package_name       u:object_r:aosp_data_file:s0
