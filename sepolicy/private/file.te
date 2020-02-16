@@ -8,3 +8,6 @@ type proc_touchpanel, fs_type, proc_type;
 # sysfs
 type sysfs_fod, sysfs_type, fs_type;
 type sysfs_oem, sysfs_type, fs_type;
+
+# OnePlus Camera
+type aosp_data_file, file_type, data_file_type, core_data_file_type;
