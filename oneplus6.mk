@@ -193,6 +193,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+# Wi-Fi
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/wifi/WCNSS_qcom_cfg.ini \
+
 # Common RRO Overlays
 PRODUCT_PACKAGES += \
     SDM845CommonBluetoothRes \
