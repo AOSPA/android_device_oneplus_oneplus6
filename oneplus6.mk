@@ -1,5 +1,5 @@
 #
-# Copyright 2019 Paranoid Android
+# Copyright 2020 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -83,9 +83,9 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system
 
 # Display Calibration
-PRODUCT_PACKAGES += \
-    qdcm_calib_data_samsung_s6e3fc2x01_cmd_mode_dsi_panel.xml \
-    qdcm_calib_data_samsung_sofef00_m_cmd_mode_dsi_panel.xml
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/qdcm_calib_data_samsung_s6e3fc2x01_cmd_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/qdcm_calib_data_samsung_s6e3fc2x01_cmd_mode_dsi_panel.xml \
+    $(LOCAL_PATH)/configs/qdcm_calib_data_samsung_sofef00_m_cmd_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/qdcm_calib_data_samsung_sofef00_m_cmd_mode_dsi_panel.xml
 
 # Fingerprint
 PRODUCT_COPY_FILES += \
@@ -99,14 +99,14 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.manager@1.0
 
-# Hotword enrollement
+# Hotword enrollment
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:system/etc/permissions/privapp-permissions-hotword.xml
 
 # Input
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/idc/gf_input.idc:system/usr/idc/gf_input.idc \
-    $(LOCAL_PATH)/keylayout/gf_input.kl:system/usr/keylayout/gf_input.kl
+    $(LOCAL_PATH)/configs/gf_input.idc:system/usr/idc/gf_input.idc \
+    $(LOCAL_PATH)/configs/gf_input.kl:system/usr/keylayout/gf_input.kl
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -130,6 +130,12 @@ PRODUCT_PACKAGES += \
 # NN
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-rtti
+
+# Performance
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/msm_irqbalance.conf \
+    $(LOCAL_PATH)/configs/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/perf/perfconfigstore.xml \
+    $(LOCAL_PATH)/configs/android.hardware.graphics.composer@2.3-service.rc:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/init/android.hardware.graphics.composer@2.3-service.rc
 
 # Power
 PRODUCT_PACKAGES += \
@@ -172,6 +178,9 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 29
+
 # VNDK-SP
 PRODUCT_PACKAGES += \
     vndk-sp
@@ -183,13 +192,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
-
-PRODUCT_TARGET_VNDK_VERSION := 29
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/msm_irqbalance.conf:system/product/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/msm_irqbalance.conf \
-    $(LOCAL_PATH)/configs/perfconfigstore.xml:system/product/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/perf/perfconfigstore.xml \
-    $(LOCAL_PATH)/configs/android.hardware.graphics.composer@2.3-service.rc:system/product/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/init/android.hardware.graphics.composer@2.3-service.rc
 
 # Common RRO Overlays
 PRODUCT_PACKAGES += \
