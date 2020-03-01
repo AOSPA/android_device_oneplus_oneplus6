@@ -4106,16 +4106,11 @@ case "$target" in
         echo "0:1324800" > /sys/module/cpu_boost/parameters/input_boost_freq
         echo 200 > /sys/module/cpu_boost/parameters/input_boost_ms
 
-        #ifdef VENDOR_EDIT
-        # Enable Adaptive LMK liuyaxin@framework.perf change
-        echo "18432,23040,27648,51256,150296,200640" > /sys/module/lowmemorykiller/parameters/minfree
-        #endif VENDOR_EDIT
-
         # Limit the min frequency to 825MHz
         echo 825000 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
 
         # Enable oom_reaper
-        echo 1 > /sys/module/lowmemorykiller/parameters/oom_reaper
+        #echo 1 > /sys/module/lowmemorykiller/parameters/oom_reaper
 
         #ifdef VENDOR_EDIT
         #Enable ufs performance
@@ -4207,8 +4202,14 @@ case "$target" in
         echo N > /sys/module/lpm_levels/L3/l3-dyn-ret/idle_enabled
         # Turn on sleep modes.
         echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
-        echo 100 > /proc/sys/vm/swappiness
-        echo 120 > /proc/sys/vm/watermark_scale_factor
+
+        # Setup 4GB of vbswap
+        echo 4294967296 > /sys/devices/virtual/block/vnswap0/disksize
+        echo 130 > /proc/sys/vm/swappiness
+        mkswap /dev/block/vnswap0
+        swapon /dev/block/vnswap0
+
+        #echo 120 > /proc/sys/vm/watermark_scale_factor
     ;;
 esac
 
