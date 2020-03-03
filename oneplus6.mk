@@ -94,11 +94,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     pa.biometrics.fingerprint.inscreen@1.0-service.oneplus_fajita
 
-# HIDL
-PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    android.hidl.manager@1.0
-
 # Hotword enrollment
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:system/etc/permissions/privapp-permissions-hotword.xml
