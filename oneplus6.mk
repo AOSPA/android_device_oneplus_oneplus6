@@ -185,14 +185,6 @@ PRODUCT_TARGET_VNDK_VERSION := 29
 PRODUCT_PACKAGES += \
     vndk-sp
 
-# WFD
-PRODUCT_PACKAGES += \
-    libnl \
-    libwfdaac
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
-
 # Wi-Fi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/wifi/WCNSS_qcom_cfg.ini \
