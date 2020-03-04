@@ -77,10 +77,8 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 # Display
-PRODUCT_PACKAGES += \
-    libdisplayconfig \
-    libqdMetaData \
-    libqdMetaData.system
+include hardware/qcom/display/config/display-product.mk
+include vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk
 
 # Display Calibration
 PRODUCT_COPY_FILES += \
