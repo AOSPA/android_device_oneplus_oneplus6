@@ -51,15 +51,11 @@ PRODUCT_PACKAGES += \
     fs_config_files
 
 # Audio
-PRODUCT_PACKAGES += \
-    android.hardware.audio@5.0 \
-    android.hardware.audio.common@5.0 \
-    android.hardware.audio.common@5.0-util \
-    android.hardware.audio.effect@5.0 \
-    libaudio-resampler \
-    libaudiohal \
-    libaudiohal_deathhandler \
-    libstagefright_softomx
+# Include Qualcomm System Audio definitions
+include $(TOPDIR)vendor/qcom/opensource/audio-hal/primary-hal/configs/qssi/qssi.mk
+# Override Proprietary Definitions From QSSI Audio HAL Makefile
+AUDIO_FEATURE_ENABLED_3D_AUDIO := false
+AUDIO_FEATURE_ENABLED_AHAL_EXT := false
 
 # Bluetooth
 PRODUCT_PACKAGES += \
