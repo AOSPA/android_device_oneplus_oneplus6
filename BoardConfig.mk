@@ -1,6 +1,5 @@
 #
-# Copyright 2019 The Android Open Source Project
-# Copyright 2019 Paranoid Android
+# Copyright 2020 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -80,17 +79,9 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 
 # Display
 TARGET_USES_ION := true
-TARGET_USES_NEW_ION_API := true
-USE_OPENGL_RENDERER := true
-MAX_EGL_CACHE_KEY_SIZE := 12*1024
-MAX_EGL_CACHE_SIZE := 2048*1024
-TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
-MAX_VIRTUAL_DISPLAY_DIMENSION := 4096
-NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 VSYNC_EVENT_PHASE_OFFSET_NS := 2000000
 SF_VSYNC_EVENT_PHASE_OFFSET_NS := 6000000
-TARGET_USES_HWC2 := true
-TARGET_USES_COLOR_METADATA := false
+include hardware/qcom/display/config/display-board.mk
 
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
