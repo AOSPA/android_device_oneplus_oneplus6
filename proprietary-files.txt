@@ -22,46 +22,6 @@ product/framework/vendor.qti.voiceprint-V1.0-java.jar
 product/lib64/vendor.qti.voiceprint@1.0.so
 product/lib/vendor.qti.voiceprint@1.0.so
 
-# CNE
-etc/cne/Nexus/ATT/ATT_profiles.xml
-etc/cne/Nexus/ROW/ROW_profiles.xml
-etc/cne/Nexus/VZW/VZW_profiles.xml
--product/app/DynamicDDSService/DynamicDDSService.apk
-product/framework/com.quicinc.cne.api-V1.1-java.jar
-product/framework/com.quicinc.cne.constants-V1.0-java.jar
-product/framework/com.quicinc.cne.constants-V2.0-java.jar
-product/framework/com.quicinc.cne.constants-V2.1-java.jar
-product/framework/vendor.qti.data.factory-V1.0-java.jar
-product/framework/vendor.qti.data.factory-V2.0-java.jar
-product/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar
-product/framework/vendor.qti.hardware.data.cne.internal.constants-V1.0-java.jar
-product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar
-product/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar
-product/lib64/com.quicinc.cne.api@1.0.so
-product/lib64/com.quicinc.cne.api@1.1.so
-product/lib64/com.quicinc.cne.constants@1.0.so
-product/lib64/com.quicinc.cne.constants@2.0.so
-product/lib64/com.quicinc.cne.constants@2.1.so
-product/lib64/vendor.qti.data.factory@1.0.so
-product/lib64/vendor.qti.data.factory@2.0.so
-product/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so
-product/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so
-product/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so
-product/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
-product/lib64/vendor.qti.hardware.data.qmi@1.0.so
-product/lib/com.quicinc.cne.api@1.0.so
-product/lib/com.quicinc.cne.api@1.1.so
-product/lib/com.quicinc.cne.constants@1.0.so
-product/lib/com.quicinc.cne.constants@2.0.so
-product/lib/com.quicinc.cne.constants@2.1.so
-product/lib/vendor.qti.data.factory@1.0.so
-product/lib/vendor.qti.data.factory@2.0.so
-product/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so
-product/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so
-product/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so
-product/lib/vendor.qti.hardware.data.dynamicdds@1.0.so
-product/lib/vendor.qti.hardware.data.qmi@1.0.so
-
 # Configstore
 product/framework/vendor.qti.hardware.capabilityconfigstore-V1.0-java.jar
 product/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
@@ -75,34 +35,6 @@ product/lib/vendor.qti.hardware.cvp@1.0.so
 
 # Dash
 -sbin/dashd;rootfs
-
-# Data modules
-product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar
-product/framework/vendor.qti.latency-V2.0-java.jar
-product/lib64/vendor.qti.hardware.data.latency@1.0.so
-product/lib64/vendor.qti.latency@2.0.so
-product/lib/vendor.qti.hardware.data.latency@1.0.so
-product/lib/vendor.qti.latency@2.0.so
-
-# DPM
--framework/tcmclient.jar
-product/bin/dpmd
-product/etc/dpm/dpm.conf
-product/etc/init/dpmd.rc
-product/etc/permissions/com.qti.dpmframework.xml
-product/etc/permissions/dpmapi.xml
--product/framework/com.qti.dpmframework.jar
--product/framework/dpmapi.jar
-product/lib/com.qualcomm.qti.dpm.api@1.0.so
-product/lib/libdpmctmgr.so
-product/lib/libdpmfdmgr.so
-product/lib/libdpmframework.so
-product/lib/libdpmtcm.so
-product/lib64/com.qualcomm.qti.dpm.api@1.0.so
-product/lib64/libdpmctmgr.so
-product/lib64/libdpmfdmgr.so
-product/lib64/libdpmframework.so
-product/lib64/libdpmtcm.so
 
 # Fingerprint
 product/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
@@ -160,11 +92,6 @@ product/lib/vendor.display.postproc@1.0.so
 -priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk
 -priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk
 
-# Iwlan
-product/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar
-product/lib64/vendor.qti.hardware.data.iwlan@1.0.so
-product/lib/vendor.qti.hardware.data.iwlan@1.0.so
-
 # NFC
 -app/NxpNfcNci/NxpNfcNci.apk|683f26e17a1e3547a821925e8a212720cb4992f6
 -app/NxpSecureElement/NxpSecureElement.apk
@@ -173,133 +100,6 @@ etc/permissions/com.nxp.nfc.xml
 framework/com.nxp.nfc.jar
 lib64/libnxpnfc_nci_jni.so
 lib64/libnxpnfc-nci.so
-
-# QMI
-etc/permissions/qti_permissions.xml
-lib64/libdiag_system.so
-lib64/libqmi_cci_system.so
-lib/libdiag_system.so
-lib/libqmi_cci_system.so
-
-# QTI Misc
-etc/permissions/privapp-permissions-qti.xml
-etc/permissions/qti_libpermissions.xml
-
-# Radio
-etc/permissions/qcnvitems.xml
--framework/qcnvitems.jar
--product/app/datastatusnotification/datastatusnotification.apk
--product/app/embms/embms.apk
--product/app/QtiSystemService/QtiSystemService.apk
--product/app/QtiTelephonyService/QtiTelephonyService.apk
-product/etc/permissions/embms-noship_product_privapp_permissions_qti.xml
-product/etc/permissions/embms.xml
-product/etc/permissions/qcrilhook.xml
-product/etc/permissions/telephonyservice.xml
-product/framework/embmslibrary.jar
--product/framework/qcrilhook.jar
-product/framework/QtiTelephonyServicelibrary.jar
-product/framework/vendor.qti.hardware.data.connection-V1.0-java.jar
-product/framework/vendor.qti.hardware.data.connection-V1.1-java.jar
-product/lib64/vendor.qti.hardware.data.connection@1.0.so
-product/lib64/vendor.qti.hardware.data.connection@1.1.so
-product/lib64/vendor.qti.hardware.radio.am@1.0.so
-product/lib64/vendor.qti.hardware.radio.lpa@1.0.so
-product/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so
-product/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so
-product/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so
-product/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so
-product/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so
-product/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so
-product/lib64/vendor.qti.hardware.radio.uim@1.0.so
-product/lib64/vendor.qti.hardware.radio.uim@1.1.so
-product/lib64/vendor.qti.hardware.radio.uim@1.2.so
-product/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
-product/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
-product/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
-product/lib/vendor.qti.hardware.data.connection@1.0.so
-product/lib/vendor.qti.hardware.data.connection@1.1.so
-product/lib/vendor.qti.hardware.radio.am@1.0.so
-product/lib/vendor.qti.hardware.radio.lpa@1.0.so
-product/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so
-product/lib/vendor.qti.hardware.radio.qtiradio@1.0.so
-product/lib/vendor.qti.hardware.radio.qtiradio@2.0.so
-product/lib/vendor.qti.hardware.radio.qtiradio@2.1.so
-product/lib/vendor.qti.hardware.radio.qtiradio@2.2.so
-product/lib/vendor.qti.hardware.radio.qtiradio@2.3.so
-product/lib/vendor.qti.hardware.radio.uim@1.0.so
-product/lib/vendor.qti.hardware.radio.uim@1.1.so
-product/lib/vendor.qti.hardware.radio.uim@1.2.so
-product/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so
-product/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so
-product/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so
--product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-
-# Radio (qti-telephony-common) - from DRG - QKQ1.190828.002
-product/framework/qti-telephony-common.jar|74adbf98e89531ac385ab5c4cea3c2549a0d24b0
-
-# Radio - IMS
-etc/permissions/com.qualcomm.qti.imscmservice.xml
-lib64/libmmrtpdecoder.so
-lib64/libmmrtpencoder.so
-lib/libmmrtpdecoder.so
-lib/libmmrtpencoder.so
--product/app/imssettings/imssettings.apk
-product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
-product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
-product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml
-product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar
-product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar
-product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar
-product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar
-product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar
-product/framework/vendor.qti.ims.callinfo-V1.0-java.jar
-product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
-product/lib64/com.qualcomm.qti.imscmservice@1.0.so
-product/lib64/com.qualcomm.qti.imscmservice@2.0.so
-product/lib64/com.qualcomm.qti.imscmservice@2.1.so
-product/lib64/com.qualcomm.qti.imscmservice@2.2.so
-product/lib64/com.qualcomm.qti.uceservice@2.0.so
-product/lib64/com.qualcomm.qti.uceservice@2.1.so
-product/lib64/libimscamera_jni.so
-product/lib64/libimsmedia_jni.so
-product/lib64/lib-imsvideocodec.so
-product/lib64/lib-imsvtextutils.so
-product/lib64/lib-imsvt.so
-product/lib64/lib-imsvtutils.so
-product/lib64/vendor.qti.hardware.radio.ims@1.0.so
-product/lib64/vendor.qti.hardware.radio.ims@1.1.so
-product/lib64/vendor.qti.hardware.radio.ims@1.2.so
-product/lib64/vendor.qti.hardware.radio.ims@1.3.so
-product/lib64/vendor.qti.hardware.radio.ims@1.4.so
-product/lib64/vendor.qti.ims.callinfo@1.0.so
-product/lib64/vendor.qti.ims.rcsconfig@1.0.so
-product/lib64/vendor.qti.imsrtpservice@2.0.so
-product/lib64/vendor.qti.imsrtpservice@2.1.so
-product/lib/com.qualcomm.qti.imscmservice@1.0.so
-product/lib/com.qualcomm.qti.imscmservice@2.0.so
-product/lib/com.qualcomm.qti.imscmservice@2.1.so
-product/lib/com.qualcomm.qti.imscmservice@2.2.so
-product/lib/com.qualcomm.qti.uceservice@2.0.so
-product/lib/com.qualcomm.qti.uceservice@2.1.so
-product/lib/libimscamera_jni.so
-product/lib/libimsmedia_jni.so
-product/lib/lib-imsvideocodec.so
-product/lib/lib-imsvideocodec.so
-product/lib/lib-imsvtextutils.so
-product/lib/lib-imsvt.so
-product/lib/lib-imsvtutils.so
-product/lib/lib-imsvtutils.so
-product/lib/vendor.qti.hardware.radio.ims@1.0.so
-product/lib/vendor.qti.hardware.radio.ims@1.1.so
-product/lib/vendor.qti.hardware.radio.ims@1.2.so
-product/lib/vendor.qti.hardware.radio.ims@1.3.so
-product/lib/vendor.qti.hardware.radio.ims@1.4.so
-product/lib/vendor.qti.ims.callinfo@1.0.so
-product/lib/vendor.qti.ims.rcsconfig@1.0.so
-product/lib/vendor.qti.imsrtpservice@2.0.so
-product/lib/vendor.qti.imsrtpservice@2.1.so
--product/priv-app/ims/ims.apk|4161acfa23df5ed8c095754e325f48d0f6968c6e
 
 # SecureMSM
 product/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
