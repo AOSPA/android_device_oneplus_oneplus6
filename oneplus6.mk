@@ -126,16 +126,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/perf/perfconfigstore.xml \
     $(LOCAL_PATH)/configs/android.hardware.graphics.composer@2.3-service.rc:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/init/android.hardware.graphics.composer@2.3-service.rc
 
-# Radio
-PRODUCT_PACKAGES += \
-    android.hardware.radio@1.0 \
-    android.hardware.radio@1.1 \
-    android.hardware.radio@1.2 \
-    android.hardware.radio@1.3 \
-    android.hardware.radio@1.4 \
-    android.hardware.radio.config@1.0 \
-    android.hardware.radio.deprecated@1.0
-
 # tri-state-key
 PRODUCT_PACKAGES += \
     TriStateHandler \
