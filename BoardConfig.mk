@@ -67,7 +67,6 @@ TARGET_USE_QTI_BT_STACK := true
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
 # Display
-TARGET_USES_ION := true
 VSYNC_EVENT_PHASE_OFFSET_NS := 2000000
 SF_VSYNC_EVENT_PHASE_OFFSET_NS := 6000000
 include hardware/qcom/display/config/display-board.mk
