@@ -136,6 +136,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     power.qcom
 
+# QTI common
+TARGET_COMMON_QTI_COMPONENTS := \
+    av \
+    bt \
+    perf \
+    telephony \
+    wfd
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.0 \
@@ -150,9 +158,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     TriStateHandler \
     tri-state-key_daemon
-
-# QTI common
--include vendor/qcom/common/*/qti-*.mk
 
 # Update engine
 PRODUCT_PACKAGES += \
