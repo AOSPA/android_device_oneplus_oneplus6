@@ -5,6 +5,9 @@ on init
     chown system system /dev/cpuset/little/tasks
     chmod 0664 /dev/cpuset/little/tasks
 
+on fs
+    mount_all /vendor/etc/fstab.f2fs
+
 service dashd /sbin/dashd
     class core
     critical

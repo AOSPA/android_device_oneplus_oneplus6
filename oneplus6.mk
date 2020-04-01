@@ -72,6 +72,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
+    fstab.f2fs \
     init.qcom.rc \
     init.qcom.post_boot.sh \
     ueventd.qcom.rc
