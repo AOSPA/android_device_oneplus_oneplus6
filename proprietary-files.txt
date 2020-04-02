@@ -34,7 +34,7 @@ product/lib/vendor.qti.hardware.cvp@1.0-adapter-helper.so
 product/lib/vendor.qti.hardware.cvp@1.0.so
 
 # Dash
--sbin/dashd;rootfs
+sbin/dashd:bin/dashd
 
 # Fingerprint
 product/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
