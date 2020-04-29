@@ -16,6 +16,24 @@
       "revId": "3ea83a456f5e9e4ad0bacb01cd0d062e6a7da5b0",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "de3a8af9_87c0f873",
+        "filename": "oneplus6.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1000066
+      },
+      "writtenOn": "2020-04-29T06:49:46Z",
+      "side": 1,
+      "message": "it\u0027s already in device tree",
+      "parentUuid": "f9f01b22_6b16aecb",
+      "revId": "3ea83a456f5e9e4ad0bacb01cd0d062e6a7da5b0",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": true
     }
   ]
 }
