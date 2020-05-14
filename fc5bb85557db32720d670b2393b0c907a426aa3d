@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3edb90d5_be5012f5",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2020-05-14T05:43:50Z",
+      "side": 1,
+      "message": "And viewers like you!",
+      "revId": "fc5bb85557db32720d670b2393b0c907a426aa3d",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": true
+    }
+  ]
+}
