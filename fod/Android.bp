@@ -16,8 +16,8 @@
 cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    name: "pa.biometrics.fingerprint.inscreen@1.0-service.oneplus_fajita",
-    init_rc: ["pa.biometrics.fingerprint.inscreen@1.0-service.oneplus_fajita.rc"],
+    name: "pa.biometrics.fingerprint.inscreen@1.0-service.oneplus_oneplus6",
+    init_rc: ["pa.biometrics.fingerprint.inscreen@1.0-service.oneplus_oneplus6.rc"],
     srcs: ["service.cpp", "FingerprintInscreen.cpp"],
     shared_libs: [
         "libbase",
@@ -30,5 +30,13 @@ cc_binary {
         "vendor.pa.biometrics.fingerprint.inscreen@1.0",
         "vendor.oneplus.fingerprint.extension@1.0",
         "vendor.oneplus.hardware.display@1.0",
+    ],
+}
+
+cc_library_static {
+    name: "libfod_extension.oneplus_oneplus6",
+    srcs: ["FodExtension.cpp"],
+    include_dirs: [
+        "frameworks/native/services/surfaceflinger/CompositionEngine/include"
     ],
 }
