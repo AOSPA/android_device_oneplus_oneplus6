@@ -322,8 +322,5 @@ debug.sf.latch_unsignaled=1
 ro.sensor.pickup=oneplus.sensor.pickup
 ro.sensor.pocket=oneplus.sensor.pocket
 
-# Radio
-persist.vendor.radio.aosp_usr_pref_sel=true
-
 # USB OTG
 persist.sys.oem.otg_support=true
