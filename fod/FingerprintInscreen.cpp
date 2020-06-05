@@ -170,7 +170,7 @@ Return<int32_t> FingerprintInscreen::getDimAmount(int32_t) {
 }
 
 Return<bool> FingerprintInscreen::shouldBoostBrightness() {
-    return true;
+    return false;
 }
 
 Return<void> FingerprintInscreen::setCallback(const sp<IFingerprintInscreenCallback>& callback) {
