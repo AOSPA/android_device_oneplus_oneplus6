@@ -93,7 +93,7 @@ PRODUCT_COPY_FILES += \
     vendor/pa/config/permissions/vendor.pa.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.pa.biometrics.fingerprint.inscreen.xml
 
 PRODUCT_PACKAGES += \
-    pa.biometrics.fingerprint.inscreen@1.0-service.oneplus_fajita
+    pa.biometrics.fingerprint.inscreen@1.0-service.oneplus_oneplus6
 
 # Hotword enrollment
 PRODUCT_COPY_FILES += \
