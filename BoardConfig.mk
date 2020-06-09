@@ -1,6 +1,6 @@
 #
 # Copyright 2019 The Android Open Source Project
-# Copyright 2019 Paranoid Android
+# Copyright 2020 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -60,17 +60,6 @@ TARGET_BOARD_PLATFORM := sdm845
 
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
-
-# Audio
-AUDIO_FEATURE_ENABLED_EXTN_FORMATS := true
-AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
-AUDIO_FEATURE_ENABLED_HDMI_SPK := true
-AUDIO_FEATURE_ENABLED_PCM_OFFLOAD := true
-AUDIO_FEATURE_ENABLED_PCM_OFFLOAD_24 := true
-AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
-AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
-USE_CUSTOM_AUDIO_POLICY := 1
-USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bluetooth
 TARGET_USE_QTI_BT_STACK := true
