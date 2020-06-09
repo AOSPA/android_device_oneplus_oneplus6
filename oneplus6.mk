@@ -50,17 +50,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fs_config_files
 
-# Audio
-PRODUCT_PACKAGES += \
-    android.hardware.audio@5.0 \
-    android.hardware.audio.common@5.0 \
-    android.hardware.audio.common@5.0-util \
-    android.hardware.audio.effect@5.0 \
-    libaudio-resampler \
-    libaudiohal \
-    libaudiohal_deathhandler \
-    libstagefright_softomx
-
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbluetooth_qti \
@@ -129,6 +118,7 @@ PRODUCT_PACKAGES += \
 
 # QTI common
 TARGET_COMMON_QTI_COMPONENTS := \
+    audio \
     av \
     bt \
     perf \
