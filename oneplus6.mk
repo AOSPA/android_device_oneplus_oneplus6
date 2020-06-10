@@ -112,6 +112,7 @@ PRODUCT_PACKAGES += \
 
 # QTI common
 TARGET_COMMON_QTI_COMPONENTS := \
+    adreno-6xx \
     audio \
     display \
     av \
