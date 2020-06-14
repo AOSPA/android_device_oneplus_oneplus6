@@ -1,5 +1,6 @@
 /*
    Copyright (c) 2016, The CyanogenMod Project
+   Copyright (c) 2020, Paranoid Android
 
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
@@ -76,9 +77,6 @@ void vendor_load_properties()
 	}
 
 	// Common Properties
-
-	// Fingerprint
-	property_override("ro.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
 
 	// Dalvik
 	property_override_dual("dalvik.vm.heapstartsize", "dalvik.vm.heapstartsize", "16m");
