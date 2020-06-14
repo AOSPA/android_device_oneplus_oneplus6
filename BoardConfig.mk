@@ -114,9 +114,6 @@ BOARD_ROOT_EXTRA_FOLDERS := op1 op2 op_odm
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
-# Properties
-BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
-
 # Treble
 BOARD_VNDK_VERSION := current
 
