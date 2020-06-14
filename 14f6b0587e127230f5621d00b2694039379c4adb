@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "62ef2640_9ea475f8",
+        "filename": "oneplus6.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 1000447
+      },
+      "writtenOn": "2020-06-14T23:18:19Z",
+      "side": 0,
+      "message": "Exists in vendor",
+      "revId": "14f6b0587e127230f5621d00b2694039379c4adb",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5a9ea5d0_e54bbf25",
+        "filename": "oneplus6.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 1000447
+      },
+      "writtenOn": "2020-06-14T23:18:19Z",
+      "side": 0,
+      "message": "Ditto",
+      "revId": "14f6b0587e127230f5621d00b2694039379c4adb",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": true
+    }
+  ]
+}
