@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="android.pa.overlay.sdm845common"
+        package="com.android.systemui.overlay.oneplus6series"
         android:versionCode="1"
         android:versionName="1.0">
-        <overlay android:targetPackage="android"
+        <overlay android:targetPackage="com.android.systemui"
 		android:priority="700"
 		android:isStatic="true" />
 </manifest>
