@@ -115,9 +115,6 @@ TARGET_USES_MKE2FS := true
 # Root
 BOARD_ROOT_EXTRA_FOLDERS := op1 op2 op_odm
 
-# Sensors
-USE_SENSOR_MULTI_HAL := true
-
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
