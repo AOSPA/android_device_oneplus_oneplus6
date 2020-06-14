@@ -67,7 +67,7 @@ void vendor_load_properties()
 		property_override("ro.product.system.model", "OnePlus 6");
 		property_override("ro.product.device", "OnePlus6");
 		property_override("ro.system.build.fingerprint", "OnePlus/OnePlus6/OnePlus6:10/QKQ1.190716.003/1910270526:user/release-keys");
-		property_override("ro.fingerprint.inscreen_disabled", "true");
+		property_override("persist.fingerprint.inscreen_disabled", "true");
 
 	} else if (variant == "OnePlus6T") {
 		property_override("ro.product.system.device", "oneplus6t");
