@@ -182,19 +182,18 @@ PRODUCT_COPY_FILES += \
 
 # Common RRO Overlays
 PRODUCT_PACKAGES += \
-    SDM845CommonBluetoothRes \
-    SDM845CommonCarrierConfigRes \
-    SDM845CommonFrameworkRes \
-    SDM845CommonFrameworkPARes \
-    SDM845CommonSystemUIPARes \
-    SDM845CommonTelephonyRes
+    OnePlus6SeriesBluetooth \
+    OnePlus6SeriesCarrierConfig \
+    OnePlus6SeriesFramework \
+    OnePlus6SeriesSystemUI \
+    OnePlus6SeriesTelephony
 
 # Variant-specific RRO overlays
 PRODUCT_PACKAGES += \
-    OnePlus6FrameworksRes \
+    OnePlus6Frameworks \
     OnePlus6SystemUI \
-    OnePlus6TFrameworksRes \
-    OnePlus6TSettingsPARes \
+    OnePlus6TFrameworks \
+    OnePlus6TSettings \
     OnePlus6TSystemUI
 
 # Add option to disable notch

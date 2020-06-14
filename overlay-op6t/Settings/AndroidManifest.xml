@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="com.android.settings.pa.overlay.oneplus6t"
+        package="com.android.settings.overlay.oneplus6t"
         android:versionCode="1"
         android:versionName="1.0">
         <overlay android:targetPackage="com.android.settings"
