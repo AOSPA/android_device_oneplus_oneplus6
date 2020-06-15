@@ -66,10 +66,6 @@ PRODUCT_PACKAGES += \
     libbluetooth_qti \
     libbt-logClient.so
 
-# Boot control
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl
-
 # Common init scripts
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -161,9 +157,6 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     libcutils \
     librecovery_updater_msm \
     libz \
-
-PRODUCT_PACKAGES_DEBUG += \
-    update_engine_client
 
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 29
