@@ -106,6 +106,10 @@ TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.oneplus_onepl
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_oneplus6
+TARGET_RECOVERY_DEVICE_MODULES := libinit_oneplus6
+
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
@@ -143,10 +147,6 @@ BOARD_VNDK_VERSION := current
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
-
-# Vendor init
-TARGET_INIT_VENDOR_LIB := libinit_oneplus6
-TARGET_RECOVERY_DEVICE_MODULES := libinit_oneplus6
 
 # Inherit from the proprietary version
 -include vendor/oneplus/oneplus6/BoardConfigVendor.mk
