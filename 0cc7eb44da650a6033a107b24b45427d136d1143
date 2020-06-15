@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ab880fbf_d0f8fd00",
+        "filename": "BoardConfig.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2020-06-15T00:46:08Z",
+      "side": 1,
+      "message": "force pushed this part away",
+      "revId": "0cc7eb44da650a6033a107b24b45427d136d1143",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": true
+    }
+  ]
+}
