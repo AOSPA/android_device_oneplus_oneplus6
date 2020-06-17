@@ -74,10 +74,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     pa.biometrics.fingerprint.inscreen@1.0-service.oneplus_oneplus6
 
-# Hotword enrollment
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-hotword.xml
-
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gf_input.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/gf_input.idc \
