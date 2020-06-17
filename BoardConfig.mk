@@ -66,9 +66,6 @@ TARGET_USE_QTI_BT_STACK := true
 # Charger Mode
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
-# Filesystem
-TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
-
 # Gestures
 TARGET_GESTURES_NODE := "/proc/touchpanel/gesture_enable"
 
