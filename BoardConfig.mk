@@ -72,9 +72,6 @@ TARGET_GESTURES_NODE := "/proc/touchpanel/gesture_enable"
 # FOD
 TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.oneplus_oneplus6
 
-# HIDL
-DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
-
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_oneplus6
 TARGET_RECOVERY_DEVICE_MODULES := libinit_oneplus6
