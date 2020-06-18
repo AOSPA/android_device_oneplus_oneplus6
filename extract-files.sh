@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Copyright (C) 2018-2019 The LineageOS Project
-# Copyright (C) 2019 Paranoid Android
+# Copyright (C) 2020 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ set -e
 export DEVICE=oneplus6
 export VENDOR=oneplus
 
-export DEVICE_BRINGUP_YEAR=2019
+export DEVICE_BRINGUP_YEAR=2020
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
