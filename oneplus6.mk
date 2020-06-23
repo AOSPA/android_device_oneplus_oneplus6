@@ -66,6 +66,9 @@ PRODUCT_PACKAGES += \
     libbluetooth_qti \
     libbt-logClient.so
 
+# Common
+$(call inherit-product, device/oneplus/common/common.mk)
+
 # Common init scripts
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -127,11 +130,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     telephony \
     wfd
 
-# tri-state-key
-PRODUCT_PACKAGES += \
-    TriStateHandler \
-    tri-state-key_daemon
-
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
@@ -186,6 +184,3 @@ PRODUCT_PACKAGES += \
     OnePlusIconShapeSquareOverlay \
     OnePlusIconShapeSquircleOverlay \
     OnePlusIconShapeTeardropOverlay
-
-# ParanoidDoze
-PRODUCT_PACKAGES += ParanoidDoze
