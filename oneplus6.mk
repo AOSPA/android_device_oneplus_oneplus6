@@ -119,10 +119,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/perf/perfconfigstore.xml \
     $(LOCAL_PATH)/configs/android.hardware.graphics.composer@2.3-service.rc:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/init/android.hardware.graphics.composer@2.3-service.rc
 
-# Power
-PRODUCT_PACKAGES += \
-    power.qcom
-
 # QTI common
 TARGET_COMMON_QTI_COMPONENTS := \
     av \
