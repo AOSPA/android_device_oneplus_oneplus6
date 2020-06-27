@@ -56,6 +56,7 @@ PRODUCT_PACKAGES += \
     libbt-logClient.so
 
 # Common
+TARGET_BOARD_PLATFORM := sdm845
 $(call inherit-product, device/oneplus/common/common.mk)
 
 # Common init scripts
