@@ -32,8 +32,8 @@
 #include <android-base/properties.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
+#include <sys/sysinfo.h>
 #include <stdio.h>
-#include <sys/system_properties.h>
 
 #include "vendor_init.h"
 #include "property_service.h"
@@ -58,6 +58,30 @@ void property_override_dual(char const system_prop[], char const vendor_prop[], 
 	property_override(vendor_prop, value);
 }
 
+void load_dalvikvm_properties()
+{
+        struct sysinfo sys;
+
+       sysinfo(&sys);
+        if (sys.totalram < 7000ull * 1024 * 1024)
+        {
+                // 6GB RAM
+                property_override_dual("dalvik.vm.heapstartsize", "dalvik.vm.heapstartsize", "16m");
+                property_override_dual("dalvik.vm.heaptargetutilization", "dalvik.vm.heaptargetutilization", "0.5");
+                property_override_dual("dalvik.vm.heapmaxfree", "dalvik.vm.heapmaxfree", "32m");
+        }
+        else
+        {
+                // 8/10GB RAM
+                property_override_dual("dalvik.vm.heapstartsize", "dalvik.vm.heapstartsize", "24m");
+                property_override_dual("dalvik.vm.heaptargetutilization", "dalvik.vm.heaptargetutilization", "0.46");
+                property_override_dual("dalvik.vm.heapmaxfree", "dalvik.vm.heapmaxfree", "48m");
+        }
+
+        property_override_dual("dalvik.vm.heapgrowthlimit", "dalvik.vm.heapgrowthlimit", "256m");
+        property_override_dual("dalvik.vm.heapsize", "dalvik.vm.heapsize", "512m");
+        property_override_dual("dalvik.vm.heapminfree", "dalvik.vm.heapminfree", "8m");
+}
 
 void vendor_load_properties()
 {
@@ -76,13 +100,6 @@ void vendor_load_properties()
 		property_override("ro.system.build.fingerprint", "OnePlus/OnePlus6T/OnePlus6T:10/QKQ1.190716.003/1910270420:user/release-keys");
 	}
 
-	// Common Properties
-
-	// Dalvik
-	property_override_dual("dalvik.vm.heapstartsize", "dalvik.vm.heapstartsize", "16m");
-	property_override_dual("dalvik.vm.heapgrowthlimit", "dalvik.vm.heapgrowthlimit", "256m");
-	property_override_dual("dalvik.vm.heapsize", "dalvik.vm.heapsize", "512m");
-	property_override_dual("dalvik.vm.heaptargetutilization", "dalvik.vm.heaptargetutilization", "0.5");
-	property_override_dual("dalvik.vm.heapminfree", "dalvik.vm.heapminfree", "8m");
-	property_override_dual("dalvik.vm.heapmaxfree", "dalvik.vm.heapmaxfree", "32m");
+	// Load dalvik config
+	load_dalvikvm_properties();
 }
