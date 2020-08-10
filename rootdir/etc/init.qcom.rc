@@ -5,6 +5,32 @@ on init
     chown system system /dev/cpuset/little/tasks
     chmod 0664 /dev/cpuset/little/tasks
 
+    chown system system /sys/class/drm/card0-DSI-1/native_display_p3_mode
+    chmod 0660 /sys/class/drm/card0-DSI-1/native_display_p3_mode
+
+    chown system system /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode
+    chmod 0660 /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode
+
+# Set sRGB calibration on Natural Mode
+on property:persist.sys.debug.color_mode=0
+    write /sys/class/drm/card0-DSI-1/native_display_p3_mode 0
+    write /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode 1
+
+# Set sRGB calibration on Boosted Mode (Natural + 10% Saturation)
+on property:persist.sys.debug.color_mode=1
+    write /sys/class/drm/card0-DSI-1/native_display_p3_mode 0
+    write /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode 1
+
+# Set unmanaged calibration on Saturated Mode
+on property:persist.sys.debug.color_mode=2
+    write /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode 0
+    write /sys/class/drm/card0-DSI-1/native_display_p3_mode 0
+
+# Set P3 calibration on Automatic Mode
+on property:persist.sys.debug.color_mode=3
+    write /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode 0
+    write /sys/class/drm/card0-DSI-1/native_display_p3_mode 1
+
 service dashd /system/bin/dashd
     class core
     critical
