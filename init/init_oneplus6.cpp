@@ -85,4 +85,8 @@ void vendor_load_properties()
 	property_override_dual("dalvik.vm.heaptargetutilization", "dalvik.vm.heaptargetutilization", "0.5");
 	property_override_dual("dalvik.vm.heapminfree", "dalvik.vm.heapminfree", "8m");
 	property_override_dual("dalvik.vm.heapmaxfree", "dalvik.vm.heapmaxfree", "32m");
+
+	// Display
+	// Set Adaptive/Automatic (P3) Color Mode by default
+	property_override_dual("persist.sys.sf.native_mode", "persist.sys.sf.native_mode", "2");
 }
