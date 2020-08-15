@@ -306,10 +306,6 @@ persist.vendor.ims.disableADBLogs=1
 
 # PA properties
 
-# Display
-# Set Adaptive/Automatic (P3) Color Mode by default
-persist.sys.sf.native_mode=2
-
 # Graphics
 persist.vendor.color.matrix=2
 debug.sf.early_phase_offset_ns=500000
