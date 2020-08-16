@@ -1,1 +1,1 @@
-allow init sysfs_display:file rw_file_perms;
+allow init sysfs_display:file create_file_perms;
