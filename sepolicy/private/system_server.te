@@ -1,1 +1,5 @@
+# Display
+allow system_server sysfs_display:file rw_file_perms;
+
+# WFD
 get_prop(system_server, wfd_sys_debug_prop)
