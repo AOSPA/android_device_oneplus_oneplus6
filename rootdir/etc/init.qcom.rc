@@ -1,13 +1,20 @@
 on init
+# Create Little CPUSet for tasks that need full little cluster
     mkdir /dev/cpuset/little
     copy /dev/cpuset/cpus /dev/cpuset/little/cpus
     copy /dev/cpuset/mems /dev/cpuset/little/mems
     chown system system /dev/cpuset/little/tasks
     chmod 0664 /dev/cpuset/little/tasks
 
+# Allow system to toggle DC Dimming
+    chown system system /sys/class/drm/card0-DSI-1/dimlayer_bl_en
+    chmod 0660 /sys/class/drm/card0-DSI-1/dimlayer_bl_en
+
+# Allow system to toggle P3 Calibration
     chown system system /sys/class/drm/card0-DSI-1/native_display_p3_mode
     chmod 0660 /sys/class/drm/card0-DSI-1/native_display_p3_mode
 
+# Allow system to toggle sRGB Calibration
     chown system system /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode
     chmod 0660 /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode
 
