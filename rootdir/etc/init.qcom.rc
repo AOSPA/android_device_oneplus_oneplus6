@@ -19,9 +19,9 @@ on init
     chmod 0660 /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode
 
 # Set sRGB calibration on Natural and Boosted Mode
-on property:persist.sys.sf.native_mode=0
-    write /sys/class/drm/card0-DSI-1/native_display_p3_mode 0
-    write /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode 1
+#on property:persist.sys.sf.native_mode=0
+    #write /sys/class/drm/card0-DSI-1/native_display_p3_mode 0
+    #write /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode 1
 
 # Set unmanaged calibration on Saturated Mode
 on property:persist.sys.sf.native_mode=1
